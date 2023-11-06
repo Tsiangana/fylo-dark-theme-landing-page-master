@@ -255,7 +255,7 @@ The designs were created to the following widths:
         width: 100%;
         height: auto;
         padding: 10px;
-        border: var(--border);
+        /*border: var(--border);*/
         display: block;
     }
 
@@ -266,7 +266,7 @@ The designs were created to the following widths:
         display: flex;
         align-items: center;
         justify-content: center;
-        border: var(--border);
+        /*border: var(--border);*/
     }
 
     .principal .container-1 .content{
@@ -297,7 +297,7 @@ The designs were created to the following widths:
         width: 100%;
         height: auto;
         padding: 100px 0;
-        border: var(--border);
+        /*border: var(--border);*/
         display: grid;
         grid-template-columns: 300px 300px 300px;
         grid-template-rows: 200px;
@@ -352,5 +352,223 @@ The designs were created to the following widths:
     @media (max-width:810px) {
         .principal .container-1 .content{
             display: block;
+            text-align: center;
+        }
+    }
+
+    @media (max-width:600px) {
+        .principal .container-1 .content h1{
+            margin-top: 40px;
+        }
+    }
+
+    @media (max-width:995px) {
+        .principal .container-2{
+            grid-template-columns: 250px 250px 250px;
+            grid-template-rows: 150px;
+            gap: 35px;
+        }
+        .principal .container-2 .box p{
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        .principal .container-2 .box .perfil{
+            margin-top: 5px;
+        }
+    }
+    @media (max-width:832px) {
+        .principal .container-2{
+            gap: 15px;
+        }
+    }
+
+    @media (max-width:795px) {
+        .principal .container-2{
+            grid-template-columns: 300px;
+            grid-template-rows: 200px;
+            gap: 35px;
+        }
+        .principal .container-2 .box p{
+            font-size: 14px;
+            margin-top: 15px;
+        }
+    
+        .principal .container-2 .box .perfil{
+            margin-top: 20px;
+        }
+    }
+
+    @media (max-width:326px) {
+        .principal .container-2{
+            grid-template-columns: 250px;
+            grid-template-rows: 173px;
+            gap: 15px;
+        }
+        .principal .container-2 .box p{
+            font-size: 12px;
+            margin-top: 15px;
+        }
+    
+        .principal .container-2 .box .perfil{
+            margin-top: 5px;
+        }
+    }
+
+
+
+
+    /* Inicio do footer */
+
+    .footer-bottom{
+        width: 100%;
+        height: auto;
+        padding: 30px;
+        margin-top: 200px;
+        background-color: var(--Dark_Blue_footer);
+        /*border: var(--border);*/
+    }
+
+    .footer-bottom .message-email{
+        width: 700px;
+        height: 280px;
+        background-color: var(--Dark_Blue_email_sign);
+        border-radius: 5px;
+        box-shadow: var(--box-shadow);
+        margin: -200px auto 0;
+        padding: 30px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+    }
+    .footer-bottom .message-email h1{
+        margin-bottom: 10px;
+    }
+    .footer-bottom .message-email p{
+        font-size: 12px;
+        margin-bottom: 5px;
+        padding: 0 10px;
+    }
+    .footer-bottom .message-email form{
+        margin-top: 30px;
+    }
+    .footer-bottom .message-email input{
+        border: none;
+        box-shadow: var(--box-shadow);
+        color: #000;
+        border-radius: 50px;
+        width: 330px;
+        height: 40px;
+        padding: 5px 30px;
+        margin-right: 15px;
+    }
+    .footer-bottom .message-email button{
+        width: 180px;
+        height: 40px;
+        border-radius: 50px;
+        border: none;
+        box-shadow: var(--box-shadow);
+        color: var(--White);
+        font-size: 15px;
+        font-weight: 600;
+        background-color: var(--Blue);
+    }
+
+    @media (max-width:760px) {
+        .footer-bottom .message-email{
+            width: 99%;
+        }
+        .footer-bottom .message-email input{
+            margin-top: 20px;
+        }
+    }
+    @media (max-width:654px) {
+        .footer-bottom .message-email form{
+            display: block;
+        }
+        .footer-bottom .message-email input{
+            margin-top: -20px;
+            margin-bottom: 20px;
+        }
+    }
+    @media (max-width:460px) {
+        .footer-bottom .message-email button{
+            width: 100%;
+        }
+        .footer-bottom .message-email input{
+            width: 100%;
+        }
+    }
+
+
+    /* footer main final */
+
+    .footer-bottom .principal{
+        margin-top: 30px;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 400px 300px 160px 160px 160px;
+        grid-template-rows: 200px;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .footer-bottom .principal .box{
+        padding: 10px;
+        color: var(--White);
+    }
+    .footer-bottom .principal .box span{
+        display: flex;
+        margin-top: 10px;
+    }
+    .footer-bottom .principal .box p{
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .footer-bottom .principal .box #text{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .footer-bottom .principal .box svg{
+        margin-right: 10px;
+    }
+    .footer-bottom .principal .box #svg{
+        width: 45px;
+    }
+
+    @media (max-width:1232px) {
+        .footer-bottom .principal{
+            grid-template-columns: 400px 300px 160px 160px;
+            grid-template-rows: 200px 200px;
+            justify-content: center;
+        }
+        #box5{
+            width: 100%;
+            text-align: center;
+        }
+    }
+    @media (max-width:1055px) {
+        .footer-bottom .principal{
+            grid-template-columns: 400px 300px 160px ;
+            grid-template-rows: 200px 200px 200px;
+            justify-content: center;
+        }
+    }
+    @media (max-width:892px) {
+        .footer-bottom .principal{
+            grid-template-columns: 400px 300px;
+            grid-template-rows: 200px 200px 200px 200px;
+            justify-content: center;
+        }
+    }
+    @media (max-width:710px) {
+        .footer-bottom .principal{
+            grid-template-columns: 300px;
+            grid-template-rows: 200px 200px 200px 200px 200px;
+            justify-content: center;
         }
     }
